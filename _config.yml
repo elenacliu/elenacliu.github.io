@@ -1,9 +1,9 @@
 # Site settings
-title: BY Blog
+title: cliu's Blog
 SEOTitle: cliu的博客 | cliu's Blog
 header-img: img/post-bg-desk.jpg
 email: elena.cliu@gmail.com
-description: "Every failure is leading towards success."
+description: "冰冻三尺，非一日之寒。"
 keyword: "cliu, cliu's Blog, cliu的博客, Liu Chang, algorithms, network embedding, Graph neural networks"
 url: "http://elenacliu.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
