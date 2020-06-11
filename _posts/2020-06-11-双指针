@@ -1,0 +1,125 @@
+---
+layout:     post
+title:      双指针
+subtitle:   题目分类
+date:       2020-06-11
+author:     cliu
+header-img:  img/post-bg-2015.jpg
+catalog: true
+tags:
+    - LeetCode
+    - 算法
+---
+
+# 双指针
+
+有以下几种情况：
+
++ 首尾开始，向中间移动，直到两者相遇（这种情况数组通常是有序的）
++ 都从头开始，同时向后移动，直到其中一个到达末尾
++ 快慢指针算法（比如找链表的中点，倒数第N个点等等）
+
+几个编程时要注意的问题：
+
++ 移动指针时千万注意**不要越界！不要越界！不要越界！**在while条件部分的**前面**加上判断！
+
+## LC15. 三数之和
+
+[题目链接](https://leetcode-cn.com/problems/3sum/)
+
+这题要求是三数之和为0，且**不能重复**。
+
+三数之和为0比较好办，先对数组进行排序，然后对下标``i, j, k``依次固定``i``，对数组后面的部分执行2sum算法即可。
+
+不能重复怎么办？那就先看看**什么情况下会发生重复**。
+
+![15pic.png](https://i.loli.net/2020/06/11/NQaHSux8T6GVA2O.png)
+
+清楚了这一点后本题就变得很简单了！
+
+时间复杂度$O(n^2)$，空间复杂度$O(n)$
+
+```python
+class Solution:
+    def threeSum(self, nums: List[int]) -> List[List[int]]:
+        nums.sort()
+        # print(nums)
+        N = len(nums)
+        if N <= 2:
+            return list(list())
+        i = 0
+        lst = list()
+        
+        while i < N - 2:
+            j, k = i + 1, N - 1
+            # print(i)
+            while j < k:
+                if nums[j] + nums[k] > -nums[i]:
+                    k -= 1
+                elif nums[j] + nums[k] < -nums[i]:
+                    j += 1
+                else:
+                    # print(j, k)
+                    lst.append([nums[i], nums[j], nums[k]])
+                    # 本处0 < j < k <= N - 1, j,k分别移动一个之后都不会越界
+                    # 用这种语法代替do while循环
+                    j += 1
+                    k -= 1
+                    while j < N and nums[j] == nums[j - 1]:	# 尤其要注意越过所有相等的数字时务必要避免越界！
+                        j += 1
+                    while k >= 0 and nums[k] == nums[k + 1]:
+                        k -= 1
+            # update i
+            i += 1
+            while i < N and nums[i] == nums[i - 1]:
+                i += 1
+                
+        return lst
+```
+
+## LC18. 四数之和
+
+实际上是三数之和的进阶版。三数之和固定（所谓固定就是遍历）一个``i``，而``j``和``k``使用双指针方法包夹求解。四数之和则依次固定``i``,``j``，而``a``和``b``使用双指针方法包夹求解。
+
+另外发现一件事情：双指针方法纯粹是降低复杂度的小trick，有点像是“剪枝”，某些不可能的组合都不给你遍历的机会！使用了双指针能够少一次$O(n)$的遍历，这也就是为什么，两数之和暴力法$O(n^2)$，双指针法$O(n)$；三数之和暴力法$O(n^3)$而双指针法$O(n^2)$；四数之和暴力法$O(n^4)$而双指针法$O(n^3)$。幂次能减一。
+
+整个算法流程和LC15非常类似，连避免重复的技巧也是一样的。
+
+```python
+class Solution:
+    def fourSum(self, nums: List[int], target: int) -> List[List[int]]:
+        nums.sort()
+        n = len(nums)
+        lst = list()
+        if n < 4:
+            return lst
+        i = 0
+        while i < n:
+            j = i + 1
+            while j < n:
+                p = nums[i] + nums[j]
+                a = j + 1
+                b = n - 1
+                while a < b:
+                    if nums[a] + nums[b] + p < target:
+                        a+=1
+                    elif nums[a] + nums[b] + p > target:
+                        b-=1
+                    else:
+                        lst.append([nums[i],nums[j],nums[a],nums[b]])
+                        a+=1
+                        b-=1
+                        while a < n and nums[a] == nums[a-1]:
+                            a+=1
+                        while b >= 0 and nums[b] == nums[b+1]:
+                            b-=1
+                j += 1
+                while j < n and nums[j] == nums[j-1]:
+                    j+=1
+            i+=1
+            while i < n and nums[i] == nums[i-1]:
+                i+=1
+        return lst
+        
+```
+
