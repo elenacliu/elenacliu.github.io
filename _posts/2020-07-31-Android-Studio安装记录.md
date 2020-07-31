@@ -4,7 +4,7 @@ title:      Android-Studio安装记录
 subtitle:   Android开发
 date:       2020-07-31
 author:     cliu
-header-img:  img/Android.png
+header-img:  img/post-bg-android.png
 catalog: true
 tags:
     - Android
