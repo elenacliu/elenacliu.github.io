@@ -19,7 +19,7 @@ linux 上 pip3 和 python3, windows 上 pip 和 python
 
 + 为什么 `python3` 执行时没有报错: no such command
 + 在 powershell 中输入 `python3` 后跳到了microsoft store? 但我显然不会通过此途径下载 python
-+ 在 powershell 中输入 where python3 后,得到的结果是 `C:\Users\******\AppData\Local\Microsoft\WindowsApps\python3.exe`, 而输入 where python 后, 得到的结果是 `D:\ProgramData\Anaconda3\python.exe` 和 `C:\Users\cliu\AppData\Local\Microsoft\WindowsApps\python.exe`. 说明python3.exe 是存在的, 只不过安装的方式比较特别
++ 在 powershell 中输入 where python3 后,得到的结果是 `C:\Users\******\AppData\Local\Microsoft\WindowsApps\python3.exe`, 而输入 where python 后, 得到的结果是 `D:\ProgramData\Anaconda3\python.exe` 和 `C:\Users\******\AppData\Local\Microsoft\WindowsApps\python.exe`. 说明python3.exe 是存在的, 只不过安装的方式比较特别
 
 
 于是终极问题是: 为什么用这个 python3.exe 执行代码, 不报错但也什么都没有发生? 直观感觉这个 python3.exe 的运行环境肯定是存在问题的(我最初以为是后台下载的时候网络还是什么东西出问题了导致环境不全). 或者说, 它是什么?
