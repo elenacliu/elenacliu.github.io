@@ -115,7 +115,7 @@ social:
   # and uncomment the lines below.
   - icon: cv
     icon_pack: ai
-    link: uploads/myresume.pdf
+    link: uploads/chang_liu_resume.pdf
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
