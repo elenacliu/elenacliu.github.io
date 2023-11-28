@@ -82,7 +82,7 @@ sections:
         - title: Research Intern
           company: RealAI
           company_url: 'https://www.real-ai.cn/'
-          company_logo: realai
+          company_logo: realai1
           location: Beijing
           date_start: '2021-11-01'
           date_end: '2022-11-01'
