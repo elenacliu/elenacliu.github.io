@@ -1,7 +1,7 @@
 ---
 # Leave the homepage title empty to use the site title
 title: ''
-date: 2022-10-24
+date: 2023-11-28
 type: landing
 
 sections:
@@ -62,13 +62,13 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - title: CEO
-          company: GenCoin
-          company_url: ''
+        - title: Inverstment Intern
+          company: Sinovation Ventures
+          company_url: 'https://www.sinovationventures.com/'
           company_logo: org-gc
-          location: California
-          date_start: '2021-01-01'
-          date_end: ''
+          location: Beijing
+          date_start: '2023-03'
+          date_end: '2023-04'
           description: |2-
               Responsibilities include:
 
