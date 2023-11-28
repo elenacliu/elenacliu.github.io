@@ -1,6 +1,9 @@
 # IDEs
 .idea/
 
+# pc
+**/.DS_store
+
 # Hugo
 resources/
 public/

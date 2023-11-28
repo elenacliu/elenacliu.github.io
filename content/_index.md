@@ -62,44 +62,49 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
+        - title: Research Assistant
+          company: Hyperplane Lab, Center on Frontiers of Computing Studies, PKU
+          company_url: 'https://github.com/hyperplane-lab'
+          company_logo: hyperplane
+          location: Beijing
+          date_start: '2023-07-01'
+          date_end: ''
+          description:
+            My research focuses on robust robot grasping with 2-finger gripper in cluttered and open scenes. To achieve this goal, perception of 3D scenes is one of the essential parts. I'm also interested in the interaction between robots and the environment to get better understanding of the world.
         - title: Inverstment Intern
           company: Sinovation Ventures
           company_url: 'https://www.sinovationventures.com/'
-          company_logo: org-gc
+          company_logo: sinoventures
           location: Beijing
           date_start: '2023-03-01'
           date_end: '2023-04-01'
-          description: |2-
-              Responsibilities include:
-
-              * Analysing
-              * Modelling
-              * Deploying
+          description: After ChatGPT was released and AIGC booms, I joined the investment group of Sinovation Ventures to see what's going on in the technology world.
         - title: Research Intern
           company: RealAI
           company_url: 'https://www.real-ai.cn/'
-          company_logo: org-x
+          company_logo: realai
           location: Beijing
           date_start: '2021-11-01'
           date_end: '2022-11-01'
-          description: Taught electronic engineering and researched semiconductor physics.
+          description:
+            My research in RealAI proposes a new method of adversarial attack against face recognition networks. It works in 3D latent space of the victim's face and achieves promising results, both on some commonly-used public face recognition backbones and on some commercial digital products.
         - title: Backend Software Engineer
-          company: ByteDance
+          company: AI Lab, ByteDance
           company_url: 'https://www.bytedance.com/en/'
-          company_logo: org-x
+          company_logo: bytedance
           location: Beijing
           date_start: '2021-06-01'
-          date_end: '2022-10-01'
-          description: Taught electronic engineering and researched semiconductor physics.
+          date_end: '2021-10-01'
+          description: I worked with the team to implement recommendation algorithms in the service platform to add a feature in customer service chatbox of Douyin App.
     design:
       columns: '2'
   - block: collection
     content:
-      title: Recent Publications
-      text: |-
-        {{% callout note %}}
-        Quickly discover relevant content by [filtering publications](./publication/).
-        {{% /callout %}}
+      title: Publications
+      # text: |-
+      #   {{% callout note %}}
+      #   Quickly discover relevant content by [filtering publications](./publication/).
+      #   {{% /callout %}}
       filters:
         folders:
           - publication
