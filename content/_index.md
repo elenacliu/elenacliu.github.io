@@ -67,21 +67,29 @@ sections:
           company_url: 'https://www.sinovationventures.com/'
           company_logo: org-gc
           location: Beijing
-          date_start: '2023-03'
-          date_end: '2023-04'
+          date_start: '2023-03-01'
+          date_end: '2023-04-01'
           description: |2-
               Responsibilities include:
 
               * Analysing
               * Modelling
               * Deploying
-        - title: Professor of Semiconductor Physics
-          company: University X
-          company_url: ''
+        - title: Research Intern
+          company: RealAI
+          company_url: 'https://www.real-ai.cn/'
           company_logo: org-x
-          location: California
-          date_start: '2016-01-01'
-          date_end: '2020-12-31'
+          location: Beijing
+          date_start: '2021-11-01'
+          date_end: '2022-11-01'
+          description: Taught electronic engineering and researched semiconductor physics.
+        - title: Backend Software Engineer
+          company: ByteDance
+          company_url: 'https://www.bytedance.com/en/'
+          company_logo: org-x
+          location: Beijing
+          date_start: '2021-06-01'
+          date_end: '2022-10-01'
           description: Taught electronic engineering and researched semiconductor physics.
     design:
       columns: '2'
