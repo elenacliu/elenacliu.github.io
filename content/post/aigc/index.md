@@ -39,7 +39,7 @@ Open-source model: https://github.com/Stability-AI/generative-models
 
 [Gen-2 | Runway](https://research.runwayml.com/gen2): similar functions, but demos are not very dynamic.
 
-__Motion Brush__: the most exciting thing about Gen-2 is "motion brush". demo here: https://academy.runwayml.com/gen2/gen2-motion-brush. The accurate control on generatedresults is unprecedented.
+__Motion Brush__: the most exciting thing about Gen-2 is "motion brush". demo here: https://academy.runwayml.com/gen2/gen2-motion-brush. The accurate control on generated results is unprecedented.
 
 
 [Text2LIVE | weizmannscience](https://github.com/omerbt/Text2LIVE):
