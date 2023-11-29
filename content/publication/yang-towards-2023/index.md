@@ -16,6 +16,7 @@ publication_types:
 publication: '*2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition
   (CVPR)*'
 doi: 10.1109/CVPR52729.2023.00401
+featured: false
 abstract: Face recognition is a prevailing authentication solution in numerous biometric
   applications. Physical adversarial attacks, as an important surrogate, can identify
   the weaknesses of face recognition systems and evaluate their robustness before

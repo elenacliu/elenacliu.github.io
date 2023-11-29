@@ -99,6 +99,7 @@ sections:
     design:
       columns: '2'
   - block: collection
+    id: publications
     content:
       title: Publications
       # text: |-
@@ -108,7 +109,7 @@ sections:
       filters:
         folders:
           - publication
-        exclude_featured: true
+        # exclude_featured: true
     design:
       columns: '2'
       view: citation
@@ -139,7 +140,8 @@ sections:
           date_end: ''
           date_start: '2023-10-01'
           description: ''
-          icon: pku
+          icon: pen
+          icon_pack: far
           organization: Peking University
           organization_url: https://english.pku.edu.cn/
           title: 	Merit Student 2022-2023

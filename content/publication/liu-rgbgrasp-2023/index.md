@@ -17,6 +17,7 @@ publishDate: '2023-11-29T03:05:44.649463Z'
 publication_types:
 - manuscript
 publication: '*arXiv*'
+featured: false
 abstract: 'Robotic research encounters a significant hurdle when it comes to the intricate
   task of grasping objects that come in various shapes, materials, and textures. Unlike
   many prior investigations that heavily leaned on specialized point-cloud cameras
