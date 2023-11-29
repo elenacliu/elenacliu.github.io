@@ -121,5 +121,5 @@ social:
 highlight_name: true
 ---
 
-I'm currently a master student in School of Software and Microelectronics, Peking University, under the supervision of [Prof. Hao Dong](https://zsdonghao.github.io/) and Prof. Tong Mo. My research interest spans robotics and 3D vision. Before that, I obtained my bachelor degree in Department of Computer Science and Technology, Tsinghua University, supervised by [Prof. Jun Zhu](https://ml.cs.tsinghua.edu.cn/~jun/index.shtml).
+I'm currently a master student in School of Software and Microelectronics, Peking University, under the supervision of [Prof. Hao Dong](https://zsdonghao.github.io/) and [Prof. Tong Mo](https://www.ss.pku.edu.cn/teacherteam/teacherlist/1615-%E8%8E%AB%E5%90%8C.html). My research interest spans robotics and 3D vision. Before that, I obtained my bachelor degree in Department of Computer Science and Technology, Tsinghua University, supervised by [Prof. Jun Zhu](https://ml.cs.tsinghua.edu.cn/~jun/index.shtml).
 {style="text-align: justify;"}
