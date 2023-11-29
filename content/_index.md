@@ -146,6 +146,24 @@ sections:
           url: ''
         - certificate_url: ''
           date_end: ''
+          date_start: '2022-11-01'
+          description: ''
+          icon: peking
+          organization: Peking University Information Security Comprehensive Ability Competition
+          organization_url: https://geekgame.pku.edu.cn/#/game
+          title: Award of Excellence
+          url: ''
+        - certificate_url: 'https://ccpc.io/post/251'
+          date_end: ''
+          date_start: '2021-10-31'
+          description: ''
+          icon: tsinghua
+          organization: China Collegiate Programming Contest (Girls Game)
+          organization_url: https://ccpc.io/
+          title: Silver Medal
+          url: ''
+        - certificate_url: ''
+          date_end: ''
           date_start: '2021-05-31'
           description: ''
           icon: tsinghua
