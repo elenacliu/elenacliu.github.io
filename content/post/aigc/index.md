@@ -54,3 +54,7 @@ ECCV2022 Oral.
 [clipdrop | Stability.AI](https://stability.ai/news/stability-ai-sdxl-turbo): extraordinary quality and speed! You can try the [demo](https://clipdrop.co/stable-diffusion-turbo) and the output is generated realtime without obvious delay.
 
 Besides, I guess the algorithm considers the historical outputs in one web session to keep the variance low (i.e. they don't vary much if I change my text by just one or two words). For example, I gave the model the same text prompt `a bird flying in the forest` in different web sessions, and the first time the bird is flying toward the left, but the second time it is toward the right side. So I believe different web sessions are independent (maybe different seeds or different historical records?), while queries in one session are not.
+
+weights for non-commercial use: https://huggingface.co/stabilityai/sdxl-turbo
+
+paper: https://stability.ai/research/adversarial-diffusion-distillation
