@@ -58,3 +58,5 @@ Besides, I guess the algorithm considers the historical outputs in one web sessi
 weights for non-commercial use: https://huggingface.co/stabilityai/sdxl-turbo
 
 paper: https://stability.ai/research/adversarial-diffusion-distillation
+
+![Alt text](image-2.png)
