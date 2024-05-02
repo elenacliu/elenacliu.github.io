@@ -62,13 +62,21 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
+        - title: SDE Intern
+          company: Amazon
+          company_url: 'https://www.amazon.com/'
+          company_logo: amazon
+          location: Beijing
+          date_start: '2024-05-06'
+          date_end: ''
+          description: Work as an SDE intern in Amazon Global Remote Fulfillment (aka GRF) team.
         - title: Research Assistant
           company: Hyperplane Lab, Center on Frontiers of Computing Studies, PKU
           company_url: 'https://github.com/hyperplane-lab'
           company_logo: hyperplane
           location: Beijing
           date_start: '2023-07-01'
-          date_end: ''
+          date_end: '2024-03-04'
           description:
             My research focuses on robust robot grasping with 2-finger gripper in cluttered and open scenes. To achieve this goal, perception of 3D scenes is one of the essential parts. I'm also interested in the interaction between robots and the environment to get better understanding of the world.
         - title: Inverstment Intern
