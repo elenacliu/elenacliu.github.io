@@ -430,7 +430,7 @@ template<
 
 看到这里你可能有疑问，为什么明明都已经有了 `_Iterator::xxxx` ，还需要包裹一层 `iterator_traits::xxxx` 呢？如果 C++ 里只有迭代器，没有裸指针，确实不需要这个 `iterator_traits`。但 C++ 为了在能使用迭代器的地方使用裸指针，而裸指针类型并没有 `Tp*::xxxx` ，所以才需要用 `iterator_traits` 进行包裹，并对裸指针类型进行特化。
 
-同时，如果我们需要为某个现有的、不能修改的迭代器类提供额外的类型别名，可以通过对`std::iterator_traits` 进行特化来实现，而不需要改动原来的迭代器定义。`iterator_traits` 相当于一个 wrapper，让各个迭代器对外暴露的类型别名一致，而实际的逻辑隐藏在 `iterator_traits` 的特化逻辑中。*（核心思想：将 high level 的特化转移到 low level 的 traits 特化）*
+同时，如果我们需要为某个现有的、不能修改的迭代器类提供额外的类型别名，可以通过对 `std::iterator_traits` 进行特化来实现，而不需要改动原来的迭代器定义。`iterator_traits` 相当于一个 wrapper，让各个迭代器对外暴露的类型别名一致，而实际的逻辑隐藏在 `iterator_traits` 的特化逻辑中。*（核心思想：将 high level 的特化转移到 low level 的 traits 特化）*
 
 ```cpp
 
@@ -628,7 +628,7 @@ struct T
     T(Integer) : type(int_t) {}
  
     template<typename Floating>
-    T(Floating) : type(float_t) {} // error: treated as redefinition
+    T(Floating) : type(float_t) {}
 };
 ```
 
