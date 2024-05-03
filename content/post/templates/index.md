@@ -16,17 +16,17 @@ image:
 
 ## **Template parameters**
 
-Every [template](https://en.cppreference.com/w/cpp/language/templates) is parameterized by one or more template parameters, indicated in the *parameter-list* of the template declaration syntax:
+> Every [template](https://en.cppreference.com/w/cpp/language/templates) is parameterized by one or more template parameters, indicated in the *parameter-list* of the template declaration syntax:
+> 
+> ```cpp
+> template < parameter-list > > declaration		
+> ```
 
-```cpp
-template < parameter-list > declaration		
-```
-
-Each parameter in *parameter-list* may be:
-
-- a non-type template parameter:
-- a type template parameter;
-- a template template parameter.
+> Each parameter in *parameter-list* may be:
+> 
+> - a non-type template parameter:
+> - a type template parameter;
+> - a template template parameter.
 
 ## **Template arguments**
 
