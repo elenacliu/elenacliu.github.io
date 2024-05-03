@@ -30,9 +30,9 @@ Each parameter in *parameter-list* may be:
 
 ## **Template arguments**
 
-In order for a template to be instantiated, every template parameter (type, non-type, or template) must be replaced by a corresponding template argument. 
-
-For [class templates](https://en.cppreference.com/w/cpp/language/class_template), the arguments are either explicitly provided, [deduced from the initializer](https://en.cppreference.com/w/cpp/language/class_template_argument_deduction), (since C++17) or defaulted. For [function templates](https://en.cppreference.com/w/cpp/language/function_template), the arguments are explicitly provided, [deduced from the context](https://en.cppreference.com/w/cpp/language/template_argument_deduction), or defaulted.
+> In order for a template to be instantiated, every template parameter (type, non-type, or template) must be replaced by a corresponding template argument. 
+> 
+> For [class templates](https://en.cppreference.com/w/cpp/language/class_template), the arguments are either explicitly provided, [deduced from the initializer](https://en.cppreference.com/w/cpp/language/class_template_argument_deduction), (since C++17) or defaulted. For [function templates](https://en.cppreference.com/w/cpp/language/function_template), the arguments are explicitly provided, [deduced from the context](https://en.cppreference.com/w/cpp/language/template_argument_deduction), or defaulted.
 
 可以暂时理解为 argument 是 parameter 例化的取值。
 
@@ -40,22 +40,22 @@ For [class templates](https://en.cppreference.com/w/cpp/language/class_template
 
 替换发生在编译期，用于在编译时选择合适的模板实例（注意，部分特化是通过重载实现的），因此替换失败并非错误是指，在模版实例的 candidate set 中不断尝试，直到找到一个成功的替换。而不是失败了就立马报错；如果全部失败才报错。
 
-This rule applies during **overload resolution of function templates**: When [substituting](https://en.cppreference.com/w/cpp/language/function_template#Template_argument_substitution) the explicitly specified or [deduced type](https://en.cppreference.com/w/cpp/language/template_argument_deduction) for the template parameter fails, the specialization is discarded from the [overload set](https://en.cppreference.com/w/cpp/language/overload_resolution) instead of causing a compile error.
-
-This feature is used in template metaprogramming.
+> This rule applies during **overload resolution of function templates**: When [substituting](https://en.cppreference.com/w/cpp/language/function_template#Template_argument_substitution) the explicitly specified or [deduced type](https://en.cppreference.com/w/cpp/language/template_argument_deduction) for the template parameter fails, the specialization is discarded from the [overload set](https://en.cppreference.com/w/cpp/language/overload_resolution) instead of causing a compile error.
+>
+> This feature is used in template metaprogramming.
 
 ## **Explanation**
 
-Function template parameters are substituted (replaced by template arguments) twice:
+> Function template parameters are substituted (replaced by template arguments) twice:
+> 
+> - explicitly specified template arguments are substituted before template argument deduction
+> - deduced arguments and the arguments obtained from the defaults are substituted after template argument deduction
+> 
+> Substitution occurs in
 
-- explicitly specified template arguments are substituted before template argument deduction
-- deduced arguments and the arguments obtained from the defaults are substituted after template argument deduction
-
-Substitution occurs in
-
-- all types used in the function type (which includes return type and the types of all parameters)
-- all types used in the template parameter declarations
-- all types used in the template argument list of a partial specialization
+> - all types used in the function type (which includes return type and the types of all parameters)
+> - all types used in the template parameter declarations
+> - all types used in the template argument list of a partial specialization
 
 # Constraints on Template
 
