@@ -616,6 +616,22 @@ struct T
 
 这就允许构造函数根据传入参数的类型（是整数类型还是浮点类型）被正确选择和实例化，编译器不会混淆两个构造函数模板，避免了重定义的错误。`enable_if` 正体现了 SFINAE 原则。
 
+下面这个正确的写法在 typename 是 Integer 时对应的 insights 类似下面这样，typename 的个数都不一样，属于重载：
+
+```cpp
+struct T
+{
+    enum { int_t, float_t } type;
+ 
+    template<typename Integer,
+            bool>
+    T(Integer) : type(int_t) {}
+ 
+    template<typename Floating>
+    T(Floating) : type(float_t) {} // error: treated as redefinition
+};
+```
+
 `[std::conditional](https://en.cppreference.com/w/cpp/types/conditional)` 的使用是类似的，这里就不再讲述。
 
 # 参考内容
